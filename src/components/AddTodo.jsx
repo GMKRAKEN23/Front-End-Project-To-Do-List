@@ -23,13 +23,14 @@ function AddTodo({ addTodo }) {
     }
 
     return (
-        <div>
+        <div className="d-flex flex-row justify-center align-items-center mb-20"> 
             <input
                 type="text"
                 placeholder="Add a task"
                 value={value}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
+                className="mr-15 container"
             />
             <button onClick={handleClick}>Ajouter</button>
         </div>

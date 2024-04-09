@@ -23,9 +23,9 @@ function App() {
 
   return (
     <>
-      <div>
-        <div>
-          <h1>To Do List</h1>
+      <div className='d-flex justify-content-center align-items-center p-20'>
+        <div className='card container'>
+          <h1 className='mb-20'>To Do List</h1>
           <AddTodo addTodo={addTodo}/>
           <TodoList todoList={todoList} deleteTodo={deleteTodo}/>
         </div>
