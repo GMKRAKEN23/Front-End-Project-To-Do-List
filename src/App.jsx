@@ -28,13 +28,17 @@ function App() {
     {...todo, selected : false}))
   }
 
+  function validateTodo(id){
+    setTodoList(todoList.map((todo) => todo.id === id ? {...todo, done : !todo.done} : todo))
+  }
+
   return (
     <>
       <div className='d-flex justify-content-center align-items-center p-20'>
         <div className='card container'>
           <h1 className='mb-20'>To Do List</h1>
           <AddTodo addTodo={addTodo}/>
-          <TodoList todoList={todoList} deleteTodo={deleteTodo} selectedTodo={selectedTodo}/>
+          <TodoList todoList={todoList} deleteTodo={deleteTodo} selectedTodo={selectedTodo} validateTodo={validateTodo}/>
         </div>
       </div>
     </>
