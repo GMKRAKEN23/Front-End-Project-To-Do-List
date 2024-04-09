@@ -1,5 +1,14 @@
 function AddTodo(){
-    return <h2>AddTodo</h2>
+
+    return (
+        <div>
+            <input 
+            type="text" 
+            placeholder="Add task"
+            />
+            <button>Ajouter</button>
+        </div>
+    )
 }
 
 export default AddTodo;
