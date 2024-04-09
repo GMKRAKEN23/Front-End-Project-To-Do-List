@@ -1,5 +1,7 @@
-function AddItems(){
-    return <h2>AddItems</h2>
+function AddItems({todo}){
+    return (
+            <li>{todo.content}</li>
+    )
 }
 
 export default AddItems;

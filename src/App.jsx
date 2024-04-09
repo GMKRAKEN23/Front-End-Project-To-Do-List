@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './App.css'
 import AddTodo from './components/AddTodo'
 import TodoList from './components/TodoList'
+import './App.css'
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
         <div>
           <h1>To Do List</h1>
           <AddTodo addTodo={addTodo}/>
-          <TodoList />
+          <TodoList todoList={todoList}/>
         </div>
       </div>
     </>
