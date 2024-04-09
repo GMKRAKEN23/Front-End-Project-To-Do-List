@@ -9,6 +9,7 @@ function App() {
 
   function addTodo(content){
     const todo = {
+      id: crypto.randomUUID(),
       edit: false,
       done: false,
       content,

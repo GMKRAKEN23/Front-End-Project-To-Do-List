@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function AddTodo(){
+function AddTodo({addTodo}){
     const [value, setValue] = useState("");
 
     function handleChange(e){
@@ -8,6 +8,10 @@ function AddTodo(){
         setValue(inputValue);
     }
 
+    function handleClick(){
+        setValue(addTodo);
+        setValue('');
+    }
 
 
     return (
@@ -17,8 +21,9 @@ function AddTodo(){
             placeholder="Add a task"
             value={value}
             onChange={handleChange}
+            onKeyDown={handleKeyDown}
             />
-            <button>Ajouter</button>
+            <button onClick={handleClick}>Ajouter</button>
         </div>
     )
 }
