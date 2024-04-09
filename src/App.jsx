@@ -13,8 +13,12 @@ function App() {
       edit: false,
       done: false,
       content,
-    }
+    };
     setTodoList([...todoList, todo]);
+  }
+
+  function deleteTodo(id){
+    setTodoList(todoList.filter((todo) => todo.id !== id))
   }
 
   return (
@@ -23,7 +27,7 @@ function App() {
         <div>
           <h1>To Do List</h1>
           <AddTodo addTodo={addTodo}/>
-          <TodoList todoList={todoList}/>
+          <TodoList todoList={todoList} deleteTodo={deleteTodo}/>
         </div>
       </div>
     </>

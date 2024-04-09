@@ -22,7 +22,6 @@ function AddTodo({ addTodo }) {
         }
     }
 
-
     return (
         <div>
             <input
