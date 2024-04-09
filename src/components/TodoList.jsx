@@ -8,7 +8,7 @@ function TodoList({todoList}){
             </span>
             
         </ul>
-    ) : <p>Aucune tâche</p>
+    ) : <p>Aucune tâche pour le moment</p>
 }
 
 export default TodoList;

@@ -14,7 +14,7 @@ function App() {
       done: false,
       content,
     }
-    setTodoList(...todoList, todo);
+    setTodoList([...todoList, todo]);
   }
 
   return (

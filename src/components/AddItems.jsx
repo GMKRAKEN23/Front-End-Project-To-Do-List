@@ -1,6 +1,10 @@
 function AddItems({todo}){
     return (
-            <li>{todo.content}</li>
+            <li>
+                <span>
+                    {todo.content}
+                </span>
+            </li>
     )
 }
 
