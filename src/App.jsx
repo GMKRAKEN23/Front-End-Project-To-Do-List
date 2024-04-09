@@ -12,6 +12,7 @@ function App() {
       id: crypto.randomUUID(),
       edit: false,
       done: false,
+      selected: false,
       content,
     };
     setTodoList([...todoList, todo]);
@@ -21,13 +22,19 @@ function App() {
     setTodoList(todoList.filter((todo) => todo.id !== id))
   }
 
+  function selectedTodo(id){
+    setTodoList(todoList.map((todo) => todo.id === id ? 
+    {...todo, selected: !todo.selected } : 
+    {...todo, selected : false}))
+  }
+
   return (
     <>
       <div className='d-flex justify-content-center align-items-center p-20'>
         <div className='card container'>
           <h1 className='mb-20'>To Do List</h1>
           <AddTodo addTodo={addTodo}/>
-          <TodoList todoList={todoList} deleteTodo={deleteTodo}/>
+          <TodoList todoList={todoList} deleteTodo={deleteTodo} selectedTodo={selectedTodo}/>
         </div>
       </div>
     </>

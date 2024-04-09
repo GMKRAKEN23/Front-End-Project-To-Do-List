@@ -1,6 +1,6 @@
 import AddItems from "./AddItems";
 
-function TodoList({todoList, deleteTodo}){
+function TodoList({todoList, deleteTodo, selectedTodo}){
     return todoList.length ? (
         <ul>
             <span>
@@ -9,6 +9,7 @@ function TodoList({todoList, deleteTodo}){
                 key={todo.id} 
                 todo={todo} 
                 deleteTodo={() => deleteTodo(todo.id)}
+                selectedTodo={() => selectedTodo(todo.id)}
                 />))}
             </span>
             
