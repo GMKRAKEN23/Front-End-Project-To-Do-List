@@ -1,0 +1,35 @@
+body {
+    font-family: var(--font-family);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--text-color);
+    background-color: var(--gray-2);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+input{
+    font-size: var(--font-family);
+}
+
+::placeholder{
+    font-size: var(--font-family);
+}
