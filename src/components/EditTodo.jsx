@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function EditTodo({todo, editTodo}) {
+function EditTodo({todo, editTodo, cancelEditTodo}) {
 
     const [value, setValue] = useState(todo.content);
 
@@ -33,7 +33,7 @@ function EditTodo({todo, editTodo}) {
                 className="mr-15 container"
             />
             <button className="btn btn-primary m-10" onClick={handleClick}>Sauvegarder</button>
-            <button className="btn btn-reverse-primary m-15">Annuler</button>
+            <button className="btn btn-reverse-primary m-15" onClick={cancelEditTodo}>Annuler</button>
         </div>
     )
 }

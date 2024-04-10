@@ -9,6 +9,7 @@ function TodoList({todoList, deleteTodo, selectedTodo, validateTodo, toggleEditT
                 key={todo.id} 
                 todo={todo} 
                 editTodo={(content) => editTodo(todo.id, content)}
+                cancelEditTodo={() => toggleEditTodo(todo.id)}
                 />)
                 : 
                 (<AddItems 
