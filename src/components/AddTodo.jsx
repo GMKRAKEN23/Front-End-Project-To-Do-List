@@ -30,7 +30,7 @@ function AddTodo({ addTodo }) {
                 value={value}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                className="mr-15 container"
+                className="mr-15 container "
             />
             <button onClick={handleClick} className="btn btn-primary m-10">Ajouter</button>
         </div>
