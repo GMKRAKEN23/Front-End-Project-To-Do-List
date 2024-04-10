@@ -7,15 +7,15 @@ function AddItems({ todo, deleteTodo, selectedTodo, validateTodo, editTodo }) {
             </span>
             <button className="btn btn-primary mr-15" onClick={(e) => 
             {validateTodo(); 
-            e.stopPropagation()}}>Valider</button>
+            e.stopPropagation()}}>Validate</button>
             <button className="btn btn-primary mr-15" onClick={(e) => {
             e.stopPropagation();
             editTodo();
-          }}>Modifier</button>
+          }}>Modify</button>
             <button className="btn btn-reverse-primary" 
             onClick={(e) => 
             {deleteTodo(); 
-            e.stopPropagation()}}>Supprimer</button>
+            e.stopPropagation()}}>Delete</button>
         </li>
     )
 }

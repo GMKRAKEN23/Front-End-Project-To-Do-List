@@ -13,6 +13,7 @@ function TodoList({todoList, deleteTodo, selectedTodo, validateTodo, toggleEditT
                 />)
                 : 
                 (<AddItems 
+                
                 key={todo.id} 
                 todo={todo} 
                 deleteTodo={() => deleteTodo(todo.id)}

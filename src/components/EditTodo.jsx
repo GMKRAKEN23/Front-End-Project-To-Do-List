@@ -32,8 +32,8 @@ function EditTodo({todo, editTodo, cancelEditTodo}) {
                 onKeyDown={handleKeyDown}
                 className="mr-15 container"
             />
-            <button className="btn btn-primary m-10" onClick={handleClick}>Sauvegarder</button>
-            <button className="btn btn-reverse-primary m-15" onClick={cancelEditTodo}>Annuler</button>
+            <button className="btn btn-primary m-10" onClick={handleClick}>Save</button>
+            <button className="btn btn-reverse-primary m-15" onClick={cancelEditTodo}>Cancel</button>
         </div>
     )
 }
