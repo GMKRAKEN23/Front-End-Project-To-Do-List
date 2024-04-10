@@ -4,7 +4,6 @@
 My first project in React, a very dynamic to do list that allows you to list daily tasks. The objective of this project is to demonstrate my basic knowledge of React.
   
 Type of Project : Personal  
-Number of Page HTML : 1
 
 ## Technologies 
 1. HTML
