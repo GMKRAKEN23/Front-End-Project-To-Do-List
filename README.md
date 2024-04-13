@@ -7,7 +7,7 @@ My first project in React, a very dynamic to do list that allows you to list dai
 Type of Project : Personal  
 
 ## Technologies 
-1. HTML
+1. JSX
 2. CSS
 3. SCSS
 4. VITE
