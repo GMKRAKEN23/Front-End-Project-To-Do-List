@@ -10,7 +10,7 @@ Type of Project : Personal
 1. HTML
 2. CSS
 3. SCSS
-4. Vite
+4. VITE  
 5. REACT
 
 ## JavaScript Features
