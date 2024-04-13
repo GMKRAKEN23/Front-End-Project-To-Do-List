@@ -7,11 +7,11 @@ My first project in React, a very dynamic to do list that allows you to list dai
 Type of Project : Personal  
 
 ## Technologies 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)   
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)  
-![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat&logo=sass&logoColor=white)  
-![Vite](https://img.shields.io/badge/Vite-%2320232a.svg?style=flat&logo=vite&logoColor=%2364ffda)  
-![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
+1. HTML
+2. CSS
+3. SCSS
+4. VITE
+5. REACT
 
 ## JavaScript Features
 - Add Items
